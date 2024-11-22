@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorted array</title>
+</head>
+<body>
+    <script>
+        function sortArray(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        // Swap arr[i] and arr[j]
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+// Test case
+let sortedArr = sortArray([3, 1, 6, 9, 2, 8]);
+console.log(sortedArr);
+// Output: [1, 2, 3, 6, 8, 9]
+
+    </script>
+</body>
+</html>

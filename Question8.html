@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate from first array</title>
+</head>
+<body>
+    <script>
+        // arr.push(arr.shift())
+        let arr=[10,20,30,40,50]
+        let arr1=[]
+        for(let i =1;i<arr.length;i++){
+            arr1[i-1]=arr[i]
+        }
+        arr1[arr1.length]=arr[0]
+        // document.write(arr1)
+       for(let i=0;i<arr1.length;i++){
+         document.write(arr1[i]+" ")
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find missing value</title>
+</head>
+<body>
+    <script>
+    function findMissingNumber(arr, n) {
+  let totalSum = (n * (n + 1)) / 2; // Sum of numbers from 1 to n
+  let arrSum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    arrSum += arr[i];
+  }
+
+  return totalSum - arrSum;
+}
+
+// Test case
+console.log(findMissingNumber([1, 2, 4, 5, 6], 6)); // Output: 3
+
+    </script>
+</body>
+</html>
